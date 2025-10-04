@@ -1,0 +1,214 @@
+/* Weather.module.css */
+
+/* 🌞 Світла тема */
+.wrapper {
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  color: #222;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background 0.6s ease, color 0.6s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 🌙 Темна тема */
+.wrapperDark {
+  background: linear-gradient(135deg, #1e1e2f, #121212);
+  color: #f5f5f5;
+  min-height: 100vh;
+  padding: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background 0.6s ease, color 0.6s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Заголовок */
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.6s ease;
+}
+
+/* Пошук */
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  max-width: 420px;
+}
+
+.input {
+  padding: 0.7rem 1rem;
+  margin: 5px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  outline: none;
+  font-size: 1rem;
+  width: 150px;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.wrapper .input {
+  background: #fff;
+  color: #222;
+}
+
+.wrapperDark .input {
+  background: #2a2a3d;
+  color: #f5f5f5;
+  border: 1px solid #555;
+}
+
+.input:focus {
+  border-color: #0077ff;
+  box-shadow: 0 0 6px rgba(0, 119, 255, 0.4);
+}
+
+.button {
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: #0077ff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 5px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background: #005fcc;
+  transform: scale(1.05);
+}
+
+/* Картка з погодою */
+.card {
+  background: rgba(255, 255, 255, 0.85);
+  color: #222;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: background 0.6s ease, color 0.6s ease, box-shadow 0.6s ease;
+}
+
+.wrapperDark .card {
+  background: rgba(34, 34, 50, 0.9);
+  color: #f5f5f5;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.city {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  margin: 0.5rem 0;
+}
+
+.temp {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.feels {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.desc {
+  font-style: italic;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+/* Деталі */
+.details {
+  font-size: 0.95rem;
+  text-align: left;
+  margin-top: 1rem;
+  line-height: 1.6;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(150, 150, 150, 0.3);
+}
+
+/* Помилка */
+.error {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* блок історії */
+.history {
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.wrapperDark .history {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.history h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* список */
+.history ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* кнопки-історії */
+.historyBtn {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background: #e0e0e0;
+  color: #333;
+}
+
+.historyBtn:hover {
+  background: #d0d0d0;
+  transform: translateY(-1px);
+}
+
+/* темна тема */
+.wrapperDark .historyBtn {
+  background: #444;
+  color: #f0f0f0;
+}
+
+.wrapperDark .historyBtn:hover {
+  background: #555;
+}
