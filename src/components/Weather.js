@@ -52,7 +52,7 @@ const Weather = () => {
         return
       }
 
-      // ✅ зберігаємо в історію нормалізоване ім'я
+      // зберігаємо в історію нормалізоване ім'я
       setHistory((prev) => {
         const cityName = data.name
         const newHistory = [
@@ -101,7 +101,7 @@ const Weather = () => {
 
       if (savedCity) setCity(savedCity)
       if (savedTheme) setTheme(savedTheme)
-      if (savedHistory) setHistory(JSON.parse(savedHistory)) // ✅ виправлено
+      if (savedHistory) setHistory(JSON.parse(savedHistory))
       if (savedWeather) {
         const parsed = JSON.parse(savedWeather)
         if (isValidWeather(parsed)) {
@@ -167,7 +167,7 @@ const Weather = () => {
         </div>
       </div>
 
-      {/* ✅ блок з історією */}
+      {/* блок з історією */}
       {history.length > 0 && (
         <div className={styles.history}>
           <h3>Recent searches:</h3>

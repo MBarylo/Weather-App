@@ -1,6 +1,6 @@
 {
   "name": "06-create-react-app",
-  "homepage": "https://mbarylo.github.io/Weather-App",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
